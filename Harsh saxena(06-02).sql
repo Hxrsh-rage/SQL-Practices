@@ -1,0 +1,26 @@
+CREATE DATABASE org;
+
+SHOW DATABASES;
+
+USE org123;
+
+CREATE TABLE Persons (
+    ID INT NOT NULL,
+    LastName VARCHAR(255) NOT NULL,
+    FirstName VARCHAR(255) NOT NULL,
+    Age INT
+);
+
+DESC Persons;
+
+ALTER TABLE Persons
+MODIFY Age INT NOT NULL;
+
+CREATE TABLE Persons1 (
+    ID INT PRIMARY KEY,
+    LastName VARCHAR(255) NOT NULL UNIQUE,
+    FirstName VARCHAR(255) NOT NULL UNIQUE,
+    Age INT
+);
+
+DESC Persons1;
